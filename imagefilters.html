@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: red;
+            }
+            img {
+                height: auto;
+                width: 33%;
+                float: left;
+                max-width: 235px; /* this is the line i am confused about */
+            }
+            .blur{
+                filter: blur(4px);
+            }
+            /*same u can add other filter properties for image styling*/
+
+ .brightness {filter: brightness(250%);}
+.contrast {filter: contrast(180%);}
+.grayscale {filter: grayscale(100%);}
+.huerotate {filter: hue-rotate(180deg);}
+.invert {filter: invert(100%);}
+.opacity {filter: opacity(50%);}
+.saturate {filter: saturate(7);}
+.sepia {filter: sepia(100%);}
+.shadow {filter: drop-shadow(8px 8px 10px green);}
+        </style>
+    </head>
+    <body>
+        <p><note>different styles of image filters</note></p>
+        <img src="abhishek design.jpg" width="300" height="300"> 
+        <!--we have added the default original image now we will use filter images next to it-->
+        <img class="blur" src="abhishek design.jpg" height="300" width="300">
+        <img class="contrast" src="abhishek design.jpg" height="300" width="300">
+        <img class="sepia"  src="abhishek design.jpg" height="300" width="300">
+        <!-- you can try the other filters as well in the same process-->
+
+       
+
+    </body>
+</html>
