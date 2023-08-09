@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container {
+                position: relative;
+                width: 52%;
+            }
+            .image {
+                opacity: 1;
+                width: 100%;
+                display: block;
+                height: auto;
+                transition: .2s ease;
+                backface-visibility: hidden;
+                /*image that will acquire the container area*/
+            }
+            .middle{
+                position: absolute;
+                opacity: 0;
+                transition: .5s ease;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%,-50%);
+
+
+            }
+            .container:hover .image {
+                opacity: 0.3;
+            }
+            .container:hover .middle{
+                opacity: 1;
+            }
+            .text{
+                background-color: red;
+                color: white;
+                font-size: 16px;
+                padding: 16px 32px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>fade in a box code</h1>
+        <div class="container">
+            <img src="abhishek design.jpg" class="image" style="width: 100%">
+            <div class="middle">
+                <div class="text">abhishek</div>
+            </div>
+        </div>
+    </body>
+</html>
