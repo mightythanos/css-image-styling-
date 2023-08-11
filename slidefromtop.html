@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .container{
+                width: 50%;
+                position: relative;
+            }
+            .image {
+                display: block;
+                width: 100%;
+                height: auto;
+
+
+            }
+            .overlay {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 100%;        /* so the layover will come from top*/
+                background-color: red;
+                overflow: hidden;
+                transition: .5s ease;
+                width: 100%;
+                height: 0;
+            }
+            .container:hover .overlay {
+                bottom: 0;    /* there is no gap in bottom line during layover*/
+                height: 100%; /*layover will cover the container while we hover on it*/
+            }
+            .text{
+                color: wheat;
+                white-space: nowrap;
+                font-size: 16px;
+                position: absolute;
+                overflow: hidden;
+                top: 50%;
+                left: 50%;  /* top and left half to keep text in center*/
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>overlay slide from the top to bottom</h1>
+        <div class="container">
+            <img src="abhishek design.jpg" class="image">
+            <div class="overlay">
+                <div class="text">abhishek</div>
+            </div>
+        </div>
+    </body>
+</html>
