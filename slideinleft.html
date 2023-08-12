@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .con {
+                width: 50%;
+                position: relative;
+            }
+            .image {
+               height: auto;
+                display: block;
+                width: 100%;
+
+            }
+            .overlay {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 0; /* as overlay coming from let(width wise)*/
+                height: 100%;
+                transition: .5s ease;
+                overflow: hidden;
+                background-color: blue;
+            }
+            .con:hover .overlay {
+            width: 100%; /*transition will flow from left to right*/
+            }
+            .text {
+                color: aliceblue;
+                font-size:30px;
+                position: absolute;
+                overflow: hidden;
+                white-space: nowrap;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                -ms-transform: translate(-50%, -50%);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="con">
+            <img src="abhishek design.jpg" class="image">
+            <div class="overlay">
+                <div class="text">hello world</div>
+            </div>
+        </div>
+    </body>
+</html>
